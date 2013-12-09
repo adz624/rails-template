@@ -1,0 +1,17 @@
+defaults: &defaults
+  app_name: "My Website"
+  domain: 'mysite.dev'
+  facebook_app_id: ""
+  facebook_secret: ""
+  google_analytics_key: ""
+  default_logo_url: "/logo.png"
+  email_sender: ""
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults
